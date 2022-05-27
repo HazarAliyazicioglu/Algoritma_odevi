@@ -46,6 +46,22 @@ def degerekle():
 tabloolustur()
 degerekle()
 
+class tip():
+    isim = ""
+    pozisyon=""
+
+
+while (True):
+    nesne = tip()
+    nesne.isim = input("Adınızı Giriniz: ")
+    nesne.pozisyon = input("Poziyonunuzu Giriniz: ")
+
+    print("{} personelinin pozizyonu {}'dır".format(nesne.isim,nesne.pozisyon))
+    sonuc = input("Devam etmek ister misiniz? (e/h)")
+
+    if (sonuc == "h"):
+        break
+
 
 
 def sistem_calisma():
